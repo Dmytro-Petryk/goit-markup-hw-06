@@ -1,0 +1,234 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #2e2f42;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav {
+    display: flex;
+}
+
+header {
+    width: 1440px;
+    height: 72px;
+    color: #2e2f42;
+    background-color: #e7e9fc;
+    display: flex;
+    position: relative;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #404bbf;
+}
+
+.ulheader {
+    margin-left: 76px;
+    margin-top: 24px;
+    gap: 40px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.tab {
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: blue;
+}
+
+.tab:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: blue;
+}
+
+.logo {
+    margin-left: 156px;
+    margin-top: 24px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.mail {
+    margin-left: 332px;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.tel {
+    margin-left: 40px;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* main*/
+.sectionone {
+    background-color: #2e2f42;
+    width: 1440px;
+    height: 600px;
+    margin-top: -48px;
+    padding-top: 188px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h1 {
+    margin-left: 472px;
+    top: 260px;
+    width: 496px;
+    height: 120px;
+    font-size: 56px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 60px;
+}
+
+button {
+    margin-left: 636px;
+    margin-top: 48px;
+    cursor: pointer;
+    background-color: rgba(77, 90, 229, 1);
+    color: #ffffff;
+    gap: 10px;
+    left: 32px;
+    border-radius: 4px;
+    border-bottom: 16px;
+    border: none;
+    border-left: 32px;
+    border-right: 32px;
+    border-top: 16px;
+    width: 169px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: rgba(64, 75, 191, 1);
+}
+
+.hh {
+    margin-top: 240px;
+    text-align: center;
+}
+
+.ulmain {
+    text-align: left;
+    gap: 8px;
+    width: 1128px;
+    margin-left: 156px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2e2f42;
+}
+
+p {
+    font-size: 16px;
+    color: #434455;
+    font-weight: 400;
+}
+
+.sectionthree {
+    background-color: #f4f4fd;
+    width: 1440px;
+    height: 732px;
+}
+
+.fotoul {
+    gap: 24px;
+    margin-left: 156px;
+    margin-top: 72px;
+}
+
+.fotoul h3 {
+    color: #2e2f42;
+}
+
+.fotoul p {
+    color: #434455;
+}
+
+.sectionfour {
+    background-color: white;
+    width: 1228px;
+    height: 1000px;
+    margin-top: 120px;
+    margin-left: 156px;
+}
+
+.ulgogo {
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 72px;
+}
+
+footer {
+    background-color: #2e2f42;
+    width: 1440px;
+    height: 312px;
+    padding-top: 100px;
+}
+
+footer p {
+    font-weight: 400;
+    color: #f4f4fd;
+    width: 264px;
+    height: 72px;
+    font-size: 16px;
+    margin-left: 156px;
+    margin-top: 16px;
+}
+
+.logofi {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 156px;
+}
+
+.logo1 {
+    color: #4d5ae5;
+}
+
+.logo2 {
+    color: #f4f4fd;
+}
+
+.logo3 {
+    color: #2e2f42;
+}
