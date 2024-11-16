@@ -39,7 +39,9 @@ nav a:hover {
 .ulheader:focus {
     color: #404bbf;
 }
-
+nav .tab{
+    color: #2e2f42;
+}
 .tab {
     cursor: pointer;
     padding-bottom: 20px;
