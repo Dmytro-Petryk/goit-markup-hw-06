@@ -2,6 +2,7 @@ body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     border-bottom: 1px solid #e7e9fc;
+    background-color: #ffffff;
 }
 
 a {
@@ -12,19 +13,16 @@ a {
 
 ul {
     list-style-type: none;
-    display: flex;
+  
 }
 
 nav {
-    display: flex;
+   
 }
 
 header {
-    width: 1440px;
-    height: 72px;
     color: #2e2f42;
     background-color: #e7e9fc;
-    display: flex;
     position: relative;
 }
 
@@ -33,12 +31,14 @@ nav a:hover {
     color: #404bbf;
 }
 
+
 .ulheader {
     margin-left: 76px;
     margin-top: 24px;
-    gap: 40px;
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.5px;
+    letter-spacing: 0.02em;
 }
 
 .tab {
@@ -51,19 +51,13 @@ nav a:hover {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
-    height: 4px;
-    width: 100%;
-    background-color: blue;
+    background-color: #404bbf;
 }
 
 .tab:hover::after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
-    height: 4px;
-    width: 100%;
     background-color: blue;
 }
 
@@ -74,102 +68,113 @@ nav a:hover {
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
+    line-height: 1.27px;
+    letter-spacing: 0.03em;
+    color: #4d5ae5;
 }
-
-.mail {
-    margin-left: 332px;
-    margin-top: 24px;
-    font-weight: 400;
-    font-size: 16px;
+.logo3 {
+    color: #2e2f42;
 }
-
-.tel {
-    margin-left: 40px;
-    margin-top: 24px;
-    font-weight: 400;
-    font-size: 16px;
-}
+ .address{
+    font-style: normal;
+    line-height: 1.5px;
+    letter-spacing: 0.02em;
+    color: #434455;
+ }
+ .address:hover{
+    color: #404bbf;
+ }
 
 /* main*/
 .sectionone {
     background-color: #2e2f42;
-    width: 1440px;
-    height: 600px;
     margin-top: -48px;
     padding-top: 188px;
+    line-height: 1.5px;
+    letter-spacing: 0.02em;
 }
 
-h2 {
-    text-align: center;
-}
 
-h1 {
+
+.hhhh {
     margin-left: 472px;
-    top: 260px;
-    width: 496px;
-    height: 120px;
     font-size: 56px;
     font-weight: 700;
     color: #ffffff;
-    line-height: 60px;
+    line-height: 1.07px;
+    text-align: center;
+    letter-spacing: 0.02em;
 }
 
-button {
+.butt {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5px;
+    letter-spacing: 0.04em;
     margin-left: 636px;
     margin-top: 48px;
     cursor: pointer;
     background-color: rgba(77, 90, 229, 1);
     color: #ffffff;
-    gap: 10px;
-    left: 32px;
-    border-radius: 4px;
-    border-bottom: 16px;
     border: none;
     border-left: 32px;
     border-right: 32px;
     border-top: 16px;
-    width: 169px;
-    height: 56px;
     font-size: 16px;
     font-weight: 500;
 }
 
-button:hover {
-    background-color: rgba(64, 75, 191, 1);
+.butt:hover {
+    background-color: #404BBF;
 }
 
-.hh {
+.hhww {
     margin-top: 240px;
     text-align: center;
-}
-
-.ulmain {
-    text-align: left;
-    gap: 8px;
-    width: 1128px;
-    margin-left: 156px;
-}
-
-h3 {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
     color: #2e2f42;
 }
 
-p {
+.h_hq{
+    text-align: center;
+    line-height: 1.2px;
+    letter-spacing: 0.02em;
+}
+.lilili{
+    font-size: 16px;
+    line-height: 1.5px;
+    letter-spacing: 0.02em;
+}
+.ulmain {
+    text-align: left;
+    margin-left: 156px;
+}
+
+.hhhqq {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2e2f42;
+    line-height: 1.2px;
+    letter-spacing: 0.02em;
+
+}
+
+.pppp {
     font-size: 16px;
     color: #434455;
     font-weight: 400;
+
 }
 
 .sectionthree {
     background-color: #f4f4fd;
-    width: 1440px;
-    height: 732px;
 }
-
+.li_li{
+    background-color: #FFFFFF;
+}
 .fotoul {
-    gap: 24px;
     margin-left: 156px;
     margin-top: 72px;
 }
@@ -184,30 +189,32 @@ p {
 
 .sectionfour {
     background-color: white;
-    width: 1228px;
-    height: 1000px;
     margin-top: 120px;
     margin-left: 156px;
 }
+.hhwwe{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2px;
+    letter-spacing: 0.02em;
+    
+}
 
 .ulgogo {
-    gap: 24px;
     flex-wrap: wrap;
     margin-top: 72px;
 }
 
-footer {
+.footer {
     background-color: #2e2f42;
-    width: 1440px;
-    height: 312px;
     padding-top: 100px;
+    line-height: 1.5px;
+    letter-spacing: 0.02em;
 }
 
 footer p {
     font-weight: 400;
     color: #f4f4fd;
-    width: 264px;
-    height: 72px;
     font-size: 16px;
     margin-left: 156px;
     margin-top: 16px;
@@ -219,6 +226,9 @@ footer p {
     font-size: 18px;
     text-transform: uppercase;
     margin-left: 156px;
+    line-height: 1.17px;
+    letter-spacing: 0.03em;
+    color: #4d5ae5;
 }
 
 .logo1 {
@@ -229,6 +239,3 @@ footer p {
     color: #f4f4fd;
 }
 
-.logo3 {
-    color: #2e2f42;
-}
