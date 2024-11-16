@@ -47,19 +47,17 @@ nav a:hover {
     cursor: pointer;
     position: relative;
     padding-bottom: 20px;
+    color: #434455;
 }
 
-.tab.active::after {
-    content: "";
-    position: absolute;
-    background-color: #404bbf;
-    color: #404bbf;
-}
-
-.tab:hover::after {
+.tab:hover {
     content: "";
     position: absolute;
     background-color: blue;
+    color: #404bbf;
+}
+
+.tab:focus {
     color: #404bbf;
 }
 
@@ -75,7 +73,7 @@ nav a:hover {
     color: #4d5ae5;
 }
 
-.logo3 {
+.logow {
     color: #2e2f42;
 }
 
@@ -90,11 +88,14 @@ nav a:hover {
     color: #404bbf;
 }
 
+.address:focus {
+    color: #404bbf;
+}
+
 /* main*/
 .sectionone {
     background-color: #2e2f42;
     margin-top: -48px;
-    padding-top: 188px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
@@ -187,25 +188,20 @@ nav a:hover {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: #2e2f42;
 }
 
 .qppp {
     letter-spacing: 0.02em;
     line-height: 1.5;
     font-size: 16px;
+    color: #434455;
 }
 
 .fotoul {
     margin-left: 156px;
     margin-top: 72px;
-}
-
-.fotoul h3 {
-    color: #2e2f42;
-}
-
-.fotoul p {
-    color: #434455;
+    background-color: #ffffff;
 }
 
 .sectionfour {
@@ -229,12 +225,11 @@ nav a:hover {
 
 .foot {
     background-color: #2e2f42;
-    padding-top: 100px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
-footer p {
+.poii {
     font-weight: 400;
     color: #f4f4fd;
     font-size: 16px;
