@@ -1,7 +1,6 @@
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
-    border-bottom: 1px solid #e7e9fc;
     background-color: #ffffff;
 }
 
@@ -13,11 +12,6 @@ a {
 
 ul {
     list-style-type: none;
-  
-}
-
-nav {
-   
 }
 
 header {
@@ -31,14 +25,22 @@ nav a:hover {
     color: #404bbf;
 }
 
-
 .ulheader {
     margin-left: 76px;
     margin-top: 24px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.ulheader:hover {
+    color: #404bbf;
+}
+
+.ulheader:focus {
+    color: #404bbf;
 }
 
 .tab {
@@ -50,15 +52,15 @@ nav a:hover {
 .tab.active::after {
     content: "";
     position: absolute;
-    bottom: 0;
     background-color: #404bbf;
+    color: #404bbf;
 }
 
 .tab:hover::after {
     content: "";
     position: absolute;
-    bottom: 0;
     background-color: blue;
+    color: #404bbf;
 }
 
 .logo {
@@ -68,47 +70,48 @@ nav a:hover {
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
-    line-height: 1.27px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #4d5ae5;
 }
+
 .logo3 {
     color: #2e2f42;
 }
- .address{
+
+.address {
     font-style: normal;
-    line-height: 1.5px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
- }
- .address:hover{
+}
+
+.address:hover {
     color: #404bbf;
- }
+}
 
 /* main*/
 .sectionone {
     background-color: #2e2f42;
     margin-top: -48px;
     padding-top: 188px;
-    line-height: 1.5px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
-
 
 .hhhh {
     margin-left: 472px;
     font-size: 56px;
     font-weight: 700;
     color: #ffffff;
-    line-height: 1.07px;
+    line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
 }
 
 .butt {
     font-family: "Roboto", sans-serif;
-    line-height: 1.5px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     margin-left: 636px;
     margin-top: 48px;
@@ -124,29 +127,35 @@ nav a:hover {
 }
 
 .butt:hover {
-    background-color: #404BBF;
+    background-color: #404bbf;
+}
+
+.butt:focus {
+    background-color: #404bbf;
 }
 
 .hhww {
     margin-top: 240px;
     text-align: center;
     font-size: 36px;
-    line-height: 1.11px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
 }
 
-.h_hq{
+.h_hq {
     text-align: center;
-    line-height: 1.2px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
 }
-.lilili{
+
+.lilili {
     font-size: 16px;
-    line-height: 1.5px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
 .ulmain {
     text-align: left;
     margin-left: 156px;
@@ -156,24 +165,36 @@ nav a:hover {
     font-size: 20px;
     font-weight: 500;
     color: #2e2f42;
-    line-height: 1.2px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
-
 }
 
 .pppp {
     font-size: 16px;
     color: #434455;
     font-weight: 400;
-
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .sectionthree {
     background-color: #f4f4fd;
 }
-.li_li{
-    background-color: #FFFFFF;
+
+.li_li {
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
+
+.qppp {
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
 .fotoul {
     margin-left: 156px;
     margin-top: 72px;
@@ -192,12 +213,13 @@ nav a:hover {
     margin-top: 120px;
     margin-left: 156px;
 }
-.hhwwe{
+
+.app {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
-    
+    color: #2e2f42;
 }
 
 .ulgogo {
@@ -205,10 +227,10 @@ nav a:hover {
     margin-top: 72px;
 }
 
-.footer {
+.foot {
     background-color: #2e2f42;
     padding-top: 100px;
-    line-height: 1.5px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
@@ -226,16 +248,15 @@ footer p {
     font-size: 18px;
     text-transform: uppercase;
     margin-left: 156px;
-    line-height: 1.17px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #4d5ae5;
 }
 
-.logo1 {
+.logow {
     color: #4d5ae5;
 }
 
-.logo2 {
+.logoq {
     color: #f4f4fd;
 }
-
