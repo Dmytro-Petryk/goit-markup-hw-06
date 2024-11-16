@@ -26,13 +26,11 @@ nav a:hover {
 }
 
 .ulheader {
-    margin-left: 76px;
-    margin-top: 24px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: #2e2f42;
 }
 
 .ulheader:hover {
@@ -53,7 +51,6 @@ nav a:hover {
 .tab:hover {
     content: "";
     position: absolute;
-    background-color: blue;
     color: #404bbf;
 }
 
@@ -62,8 +59,6 @@ nav a:hover {
 }
 
 .logo {
-    margin-left: 156px;
-    margin-top: 24px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -95,13 +90,11 @@ nav a:hover {
 /* main*/
 .sectionone {
     background-color: #2e2f42;
-    margin-top: -48px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
 .hhhh {
-    margin-left: 472px;
     font-size: 56px;
     font-weight: 700;
     color: #ffffff;
@@ -114,15 +107,9 @@ nav a:hover {
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    margin-left: 636px;
-    margin-top: 48px;
     cursor: pointer;
     background-color: rgba(77, 90, 229, 1);
     color: #ffffff;
-    border: none;
-    border-left: 32px;
-    border-right: 32px;
-    border-top: 16px;
     font-size: 16px;
     font-weight: 500;
 }
@@ -136,7 +123,6 @@ nav a:hover {
 }
 
 .hhww {
-    margin-top: 240px;
     text-align: center;
     font-size: 36px;
     line-height: 1.11;
@@ -199,15 +185,11 @@ nav a:hover {
 }
 
 .fotoul {
-    margin-left: 156px;
-    margin-top: 72px;
     background-color: #ffffff;
 }
 
 .sectionfour {
     background-color: white;
-    margin-top: 120px;
-    margin-left: 156px;
 }
 
 .app {
@@ -216,11 +198,6 @@ nav a:hover {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-}
-
-.ulgogo {
-    flex-wrap: wrap;
-    margin-top: 72px;
 }
 
 .foot {
@@ -233,8 +210,6 @@ nav a:hover {
     font-weight: 400;
     color: #f4f4fd;
     font-size: 16px;
-    margin-left: 156px;
-    margin-top: 16px;
 }
 
 .logofi {
@@ -242,7 +217,6 @@ nav a:hover {
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
-    margin-left: 156px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: #4d5ae5;
