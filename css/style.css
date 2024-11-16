@@ -17,7 +17,6 @@ ul {
 header {
     color: #2e2f42;
     background-color: #e7e9fc;
-    position: relative;
 }
 
 nav a:hover {
@@ -43,14 +42,11 @@ nav a:hover {
 
 .tab {
     cursor: pointer;
-    position: relative;
     padding-bottom: 20px;
     color: #434455;
 }
 
 .tab:hover {
-    content: "";
-    position: absolute;
     color: #404bbf;
 }
 
@@ -145,7 +141,6 @@ nav a:hover {
 
 .ulmain {
     text-align: left;
-    margin-left: 156px;
 }
 
 .hhhqq {
@@ -185,7 +180,7 @@ nav a:hover {
 }
 
 .fotoul {
-    background-color: #ffffff;
+    background-color:#FFFFFF;
 }
 
 .sectionfour {
@@ -223,7 +218,7 @@ nav a:hover {
 }
 
 .logow {
-    color: #4d5ae5;
+    color: #2e2f42;
 }
 
 .logoq {
