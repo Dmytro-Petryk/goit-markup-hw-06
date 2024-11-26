@@ -4,7 +4,10 @@ body {
     background-color: #ffffff;
     margin: 0;
   }
-  
+  .ulmain .lilili{
+    width: calc((100% - 72px) / 4);
+  }
+
   a {
     text-decoration: none;
     cursor: pointer;
@@ -55,7 +58,7 @@ body {
     gap: 40px;
   }
   
-  .tab {
+  .tabq {
     padding: 24px 0;
   }
   .ulheader:hover {
@@ -65,10 +68,10 @@ body {
   .ulheader:focus {
     color: #404bbf;
   }
-  nav .tab {
+  nav .tabq {
     color: #2e2f42;
   }
-  .tab {
+  .tabq {
     cursor: pointer;
     padding-bottom: 20px;
     color: #434455;
@@ -78,7 +81,7 @@ body {
     color: #404bbf;
   }
   
-  .tab:focus {
+  .tabq:focus {
     color: #404bbf;
   }
   
@@ -172,6 +175,17 @@ body {
   .lilili {
     width: calc((100% - 72px) / 4);
   }
+  .visually-hidden {
+    position: absolute; 
+    width: 1px;         
+    height: 1px;  
+    padding: 0;        
+    margin: -1px;      
+    overflow: hidden;  
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; 
+    border: 0;          
+}
   
   .ulmain {
     text-align: left;
@@ -285,7 +299,11 @@ body {
     font-size: 16px;
     max-width: 264px;
   }
-  
+  header div{
+    display: flex;
+    width: 1158px; 
+    padding: 0 15px;
+  }
   .logofi {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
