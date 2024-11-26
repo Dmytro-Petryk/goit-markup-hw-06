@@ -12,13 +12,15 @@ a {
 
 ul {
   list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
 img {
   display: block;
 }
 li {
-  margin: 0;
   padding-left: 0;
+  margin: 0;
 }
 
 .head-nav {
@@ -60,6 +62,7 @@ nav a:hover {
 
 .tabq {
   padding: 24px 0;
+  display: block;
 }
 .ulheader:hover {
   color: #404bbf;
@@ -183,7 +186,7 @@ nav .tabq {
 }
 
 .lilili {
-  flex-basis: calc((100%-72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 .visually-hidden {
   position: absolute;
@@ -261,7 +264,7 @@ nav .tabq {
 }
 
 .fotoli {
-  flex-basis: calc((100%-72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 .profile {
