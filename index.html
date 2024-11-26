@@ -1,150 +1,246 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-</head>
+  </head>
 
-<body>
-    <header>
-        <nav>
-            <a class="logo" href="./index.html">Web<span class="logow">Studio</span></a>
-            <ul class="ulheader">
-                <li><a class="tab" href="./index.html">Studio</a></li>
-                <li><a class="tab" href="">Portfolio</a></li>
-                <li><a class="tab" href="">Contacts</a></li>
-            </ul>
+  <body>
+    <header class="head-nav">
+      <div class="div-main">
+        <nav class="navt">
+          <a class="logo" href="./index.html"
+            >Web<span class="logow">Studio</span></a
+          >
+          <ul class="ulheader">
+            <li><a class="tab" href="./index.html">Studio</a></li>
+            <li><a class="tab" href="">Portfolio</a></li>
+            <li><a class="tab" href="">Contacts</a></li>
+          </ul>
         </nav>
         <address class="address">
-            <ul class="ulheader">
-                <li>
-                    <a class="tab" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a class="tab" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                </li>
-            </ul>
+          <ul class="ulheader">
+            <li>
+              <a class="tab" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="tab" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
         </address>
+      </div>
     </header>
 
     <main>
-        <section class="sectionone">
-            <h1 class="hhhh">Effective Solutions for Your Business</h1>
-            <button class="butt" type="button">Order Service</button>
-        </section>
+      <section class="sectionone">
+        <div class="container">
+          <h1 class="hhhh">Effective Solutions for Your Business</h1>
+          <button class="butt" type="button">Order Service</button>
+        </div>
+      </section>
 
-        <section>
-            <h2 class="h_hq">Features</h2>
-            <ul class="ulmain">
-                <li class="lilili">
-                    <h3 class="hhhqq">Strategy</h3>
-                    <p class="pppp">
-                        Our goal is to identify the business problem to walk away with the
-                        perfect and creative solution.
-                    </p>
-                </li>
-                <li>
-                    <h3 class="hhhqq">Punctuality</h3>
-                    <p class="pppp">
-                        Bring the key message to the brand's audience for the best price
-                        within the shortest possible time.
-                    </p>
-                </li>
-                <li>
-                    <h3 class="hhhqq">Diligence</h3>
-                    <p class="pppp">
-                        Research and confirm brands that present the strongest digital
-                        growth opportunities and minimize risk.
-                    </p>
-                </li>
-                <li>
-                    <h3 class="hhhqq">Technologies</h3>
-                    <p class="pppp">
-                        Design practice focused on digital experiences. We bring forth a
-                        deep passion for problem-solving.
-                    </p>
-                </li>
-            </ul>
-        </section>
+      <section class="sectiontwo">
+        <div class="container">
+          <h2 class="visually-hidden">Features</h2>
+          <ul class="ulmain">
+            <li class="lilili">
+              <h3 class="hhhqq">Strategy</h3>
+              <p class="pppp">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li class="lilili">
+              <h3 class="hhhqq">Punctuality</h3>
+              <p class="pppp">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="lilili">
+              <h3 class="hhhqq">Diligence</h3>
+              <p class="pppp">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="lilili">
+              <h3 class="hhhqq">Technologies</h3>
+              <p class="pppp">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <section class="sectionthree">
-            <h2 class="hhww">Our Team</h2>
-            <ul class="fotoul">
-                <li class="fotoul">
-                    <img src="./images/img-3-2.jpg" alt="Mark Guerrero" width="264" height="260" />
-                    <h3 class="li_li">Mark Guerrero</h3>
-                    <p class="pppp">Product Designer</p>
-                </li>
-                <li class="fotoul">
-                    <img src="./images/img-2-2.jpg" alt="Tom Ford" width="264" height="260" />
-                    <h3 class="li_li">Tom Ford</h3>
-                    <p class="pppp">Frontend Developer</p>
-                </li>
-                <li class="fotoul">
-                    <img src="./images/img-1-2.jpg" alt="Camila Garcia" width="264" height="260" />
-                    <h3 class="li_li">Camila Garcia</h3>
-                    <p class="pppp">Marketing</p>
-                </li>
-                <li class="fotoul">
-                    <img src="./images/img-55.jpg" alt="Daniel Wilson" width="264" height="260" />
-                    <h3 class="li_li">Daniel Wilson</h3>
-                    <p class="pppp">UI Designer</p>
-                </li>
-            </ul>
-        </section>
+      <section class="sectionthree">
+        <div class="container">
+          <h2 class="hhww">Our Team</h2>
+          <ul class="fotoul">
+            <li class="fotoli">
+              <div class="profile">
+                <img
+                  src="./images/img-3-2.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                  height="260"
+                />
+                <h3 class="li_li">Mark Guerrero</h3>
+                <p class="pppp">Product Designer</p>
+              </div>
+            </li>
+            <li class="fotoli">
+              <div class="profile">
+                <img
+                  src="./images/img-2-2.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                  height="260"
+                />
+                <h3 class="li_li">Tom Ford</h3>
+                <p class="pppp">Frontend Developer</p>
+              </div>
+            </li>
 
-        <section class="sectionfour">
-            <h2 class="hhww">Our Pertfolio</h2>
-            <ul class="ulgogo">
-                <li>
-                    <img src="./images/img-5.jpg" alt="Banking App" width="360" height="300" />
-                    <h3 class="app">Banking App</h3>
-                    <p class="pppp">App</p>
-                </li>
-                <li>
-                    <img src="./images/img-4.jpg" alt="Cashess Playment" width="360" height="300" />
-                    <h3 class="app">Cashless Payment</h3>
-                    <p class="pppp">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/img-3.jpg" alt="Meditation App" width="360" height="300" />
-                    <h3 class="app">Meditation App</h3>
-                    <p class="pppp">App</p>
-                </li>
-                <li>
-                    <img src="./images/img-2.jpg" alt="Taxi Service" width="360" height="300" />
-                    <h3 class="app">Taxi Service</h3>
-                    <p class="pppp">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/img-1.jpg" alt="Screen Illustrations" width="360" height="300" />
-                    <h3 class="app">Screen Illustrations</h3>
-                    <p class="pppp">Design</p>
-                </li>
-                <li>
-                    <img src="./images/img.jpg" alt="Online Courses" width="360" height="300" />
-                    <h3 class="app">Online Courses</h3>
-                    <p class="pppp">Marketing</p>
-                </li>
-            </ul>
-        </section>
+            <li class="fotoli">
+              <div class="profile">
+                <img
+                  src="./images/img-1-2.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                  height="260"
+                />
+                <h3 class="li_li">Camila Garcia</h3>
+                <p class="pppp">Marketing</p>
+              </div>
+            </li>
+
+            <li class="fotoli">
+              <div class="profile">
+                <img
+                  src="./images/img-55.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                  height="260"
+                />
+                <h3 class="li_li">Daniel Wilson</h3>
+                <p class="pppp">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="sectionfour">
+        <div class="container">
+          <h2 class="hhww">Our Pertfolio</h2>
+          <ul class="ulgogo">
+            <li class="lifour">
+              <div class="divfour">
+                <img
+                  src="./images/img-5.jpg"
+                  alt="Banking App"
+                  width="360"
+                  height="300"
+                />
+                <h3 class="app">Banking App</h3>
+                <p class="pppp">App</p>
+              </div>
+            </li>
+            <li>
+              <div class="divfour">
+                <img
+                  src="./images/img-4.jpg"
+                  alt="Cashess Playment"
+                  width="360"
+                  height="300"
+                />
+                <h3 class="app">Cashless Payment</h3>
+                <p class="pppp">Marketing</p>
+              </div>
+            </li>
+            <li>
+              <div class="divfour">
+                <img
+                  src="./images/img-3.jpg"
+                  alt="Meditation App"
+                  width="360"
+                  height="300"
+                />
+                <h3 class="app">Meditation App</h3>
+                <p class="pppp">App</p>
+              </div>
+            </li>
+            <li>
+              <div class="divfour">
+                <img
+                  src="./images/img-2.jpg"
+                  alt="Taxi Service"
+                  width="360"
+                  height="300"
+                />
+                <h3 class="app">Taxi Service</h3>
+                <p class="pppp">Marketing</p>
+              </div>
+            </li>
+            <li>
+              <div class="divfour">
+                <img
+                  src="./images/img-1.jpg"
+                  alt="Screen Illustrations"
+                  width="360"
+                  height="300"
+                />
+                <h3 class="app">Screen Illustrations</h3>
+                <p class="pppp">Design</p>
+              </div>
+            </li>
+            <li>
+              <div class="divfour">
+                <img
+                  src="./images/img.jpg"
+                  alt="Online Courses"
+                  width="360"
+                  height="300"
+                />
+                <h3 class="app">Online Courses</h3>
+                <p class="pppp">Marketing</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer class="foot">
-        <a class="logofi" href="./index.html">Web<span class="logoq">Studio</span></a>
+      <div class="container">
+        <a class="logofi" href="./index.html"
+          >Web<span class="logoq">Studio</span></a
+        >
         <p class="poii">
-            Increase the flow of customers and sales for your business with digital
-            marketing & growth solutions.
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
         </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
