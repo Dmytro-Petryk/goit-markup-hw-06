@@ -4,10 +4,6 @@ body {
     background-color: #ffffff;
     margin: 0;
   }
-  .ulmain .lilili{
-    width: calc((100% - 72px) / 4);
-  }
-
   a {
     text-decoration: none;
     cursor: pointer;
@@ -303,6 +299,7 @@ body {
     display: flex;
     width: 1158px; 
     padding: 0 15px;
+    margin: 0 auto;
   }
   .logofi {
     font-family: "Raleway", sans-serif;
