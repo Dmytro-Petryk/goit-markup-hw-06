@@ -9,7 +9,9 @@ a {
   cursor: pointer;
   color: #2e2f42;
 }
-
+h1 h2 h3 h4 h5 h6 p {
+  margin: 0;
+}
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -35,6 +37,7 @@ li {
 .navt {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 .logo {
   margin-right: 76px;
@@ -125,8 +128,13 @@ nav .tabq {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 188px 0;
+  margin-left: auto;
+  margin-right: auto;
 }
-
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
 .hhhh {
   font-size: 56px;
   font-weight: 700;
@@ -151,6 +159,8 @@ nav .tabq {
   height: 56px;
   border: none;
   border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .butt:hover {
@@ -210,6 +220,9 @@ nav .tabq {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
+.profile p {
+  text-align: center;
+}
 
 .pppp {
   font-size: 16px;
@@ -217,7 +230,6 @@ nav .tabq {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
 }
 
 .sectionthree {
