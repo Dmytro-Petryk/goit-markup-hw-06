@@ -8,6 +8,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: #2e2f42;
+  position: relative;
 }
 h1 h2 h3 h4 h5 h6 p {
   margin: 0;
@@ -23,6 +24,9 @@ img {
 li {
   padding-left: 0;
   margin: 0;
+}
+svg {
+  display: block;
 }
 
 .head-nav {
@@ -50,6 +54,8 @@ header {
 nav a:hover {
   text-decoration: none;
   color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ulheader {
@@ -70,10 +76,14 @@ nav a:hover {
 }
 .ulheader:hover {
   color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ulheader:focus {
   color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 nav .tabq {
   color: #2e2f42;
@@ -81,10 +91,14 @@ nav .tabq {
 
 .tab:hover {
   color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tabq:focus {
   color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -116,15 +130,31 @@ nav .tabq {
 
 .address:hover {
   color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address:focus {
   color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* main*/
+
 .sectionone {
-  background-color: #2e2f42;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office.svg);
+
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  background-size: cover;
+  width: 1440px;
+  height: 600px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 188px 0;
@@ -165,10 +195,14 @@ h1 {
 
 .butt:hover {
   background-color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .butt:focus {
   background-color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sectiontwo {
@@ -193,17 +227,6 @@ h1 {
 
 .lilili {
   flex-basis: calc((100% - 72px) / 4);
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }
 
 .ulmain {
@@ -350,4 +373,147 @@ header div {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+.icon {
+  fill: black;
+  color: #2e2f42;
+}
+
+.profile {
+  box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #0813ec29,
+    0px 1px 6px 0px #2e2f4214;
+}
+.icon {
+  border: 2px dashed #2a2a2a;
+  border-radius: 8px;
+  fill: #2a2a2a;
+}
+.ulmain {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.icon-two {
+  fill: #2e2f42;
+  width: 64px;
+  height: 64px;
+}
+.icon-back {
+  width: 264px;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4fd;
+  border: 1px solid #8e8f99;
+}
+
+.icon-color {
+  background: rgba(77, 90, 229, 1);
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+  opacity: 0px;
+}
+
+.icon-tree {
+  height: 16px;
+  width: 16px;
+  background: rgba(77, 90, 229, 1);
+}
+
+.icon-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.sectionthree .icon-ul {
+  padding-left: 16px;
+}
+
+h6 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+footer .container {
+  display: flex;
+  flex-direction: row;
+}
+footer .icon-color {
+  padding: 0;
+}
+.footer-media {
+  padding-left: 120px;
+}
+.tabq {
+  line-height: 1.333;
+  letter-spacing: 3px;
+}
+
+.tabq::after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  transition: width 0.3s ease;
+  position: absolute;
+}
+.tabq:hover::after {
+  background-color: rgba(64, 75, 191, 1);
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.image-container::after {
+  content: "14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App"; /* Ваше повідомлення */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -250px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4d5ae5;
+  color: white;
+  padding: 40px 32px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-container:hover::after {
+  opacity: 1;
+  bottom: 0px;
 }
