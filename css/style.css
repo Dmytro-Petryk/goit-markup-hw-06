@@ -1,4 +1,4 @@
-body {
+\body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
@@ -320,6 +320,7 @@ h1 {
 }
 .lifour {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .divfour {
   padding: 32px 16px;
@@ -428,21 +429,25 @@ header div {
   flex-direction: row;
   gap: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  gap: 16px;
 }
 
-h6 {
+.mediaqq {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   margin-top: 0;
   margin-bottom: 16px;
+  line-height: 1.5;
 }
 footer .container {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
+  margin-right: 120px;
 }
 footer .icon-color {
   padding: 0;
@@ -470,6 +475,8 @@ footer .icon-color {
 }
 .tabq:hover::after {
   width: 100%;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .image-container {
@@ -482,37 +489,55 @@ footer .icon-color {
   position: relative;
 }
 
-.image-container::after {
-  content: "14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App"; /* Ваше повідомлення */
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: -250px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #4d5ae5;
-  color: white;
-  padding: 40px 32px;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  border-radius: 5px;
-  font-size: 14px;
-  opacity: 0;
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .image-container:hover::after {
   opacity: 1;
   bottom: 0px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
+  overflow: hidden;
 }
 .icon-ul {
   fill: #f4f4fd;
+}
+.per {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  transform: translateY(100%);
+  width: 100%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-container .per {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  top: 50%;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  height: 100%;
+  transform: translateY(100%);
+  width: 100%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%);
+  background-color: #4d5ae5;
+  padding: 10px;
+  border-radius: 8px;
+  padding: 40px 32px;
+}
+
+.image-container:hover .per {
+  display: block;
 }
 .sms {
   width: 100%;
