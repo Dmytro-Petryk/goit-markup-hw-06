@@ -9,6 +9,7 @@ a {
   cursor: pointer;
   color: #2e2f42;
   position: relative;
+  color: #404bbf;
 }
 h1 h2 h3 h4 h5 h6 p {
   margin: 0;
@@ -49,6 +50,8 @@ svg {
 
 header {
   color: #2e2f42;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 nav a:hover {
@@ -59,6 +62,7 @@ nav a:hover {
 }
 
 .ulheader {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -73,6 +77,7 @@ nav a:hover {
   display: block;
   cursor: pointer;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ulheader:hover {
   color: #404bbf;
@@ -144,16 +149,14 @@ nav .tabq {
 
 .sectionone {
   background-image: linear-gradient(
-      to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office.svg);
-
+    url(/images/people-office.jpg);
+  max-width: 1440px;
   background-repeat: no-repeat;
   background-position: 50%, 50%;
   background-size: cover;
-  width: 1440px;
   height: 600px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -191,6 +194,7 @@ h1 {
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .butt:hover {
@@ -295,6 +299,8 @@ h1 {
 }
 
 .fotoli {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
@@ -396,8 +402,6 @@ header div {
 }
 .icon-two {
   fill: #2e2f42;
-  width: 64px;
-  height: 64px;
 }
 .icon-back {
   width: 264px;
@@ -407,34 +411,23 @@ header div {
   align-items: center;
   background: #f4f4fd;
   border: 1px solid #8e8f99;
-}
-
-.icon-color {
-  background: rgba(77, 90, 229, 1);
-  gap: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-
-  opacity: 0px;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .icon-tree {
   height: 16px;
   width: 16px;
   background: rgba(77, 90, 229, 1);
+  fill: #f4f4fd;
 }
 
 .icon-ul {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   gap: 24px;
-}
-.sectionthree .icon-ul {
-  padding-left: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h6 {
@@ -464,17 +457,18 @@ footer .icon-color {
 
 .tabq::after {
   content: "";
+  width: 100%;
   width: 48px;
   height: 4px;
   border-radius: 2px;
   left: 0;
-  bottom: -2px;
+  bottom: -1px;
   width: 0;
   transition: width 0.3s ease;
   position: absolute;
+  background-color: #404bbf;
 }
 .tabq:hover::after {
-  background-color: rgba(64, 75, 191, 1);
   width: 100%;
 }
 
@@ -516,4 +510,26 @@ footer .icon-color {
 .image-container:hover::after {
   opacity: 1;
   bottom: 0px;
+}
+.icon-ul {
+  fill: #f4f4fd;
+}
+.sms {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.sms:hover {
+  background-color: #404bbf;
+}
+
+.sms:focus {
+  background-color: #404bbf;
 }
