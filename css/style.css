@@ -156,7 +156,7 @@ nav .tabq {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office.jpg);
+    url(../images/people-office.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: 50%, 50%;
@@ -476,11 +476,6 @@ footer .icon-color {
 .footer-media {
   padding-left: 120px;
 }
-.tabq {
-  line-height: 1.333;
-  letter-spacing: 3px;
-}
-
 .tabq::after {
   content: "";
   width: 100%;
@@ -501,6 +496,10 @@ footer .icon-color {
 
 .image-container {
   position: relative;
+  overflow: hidden;
+}
+.icon-ul {
+  fill: #f4f4fd;
 }
 
 .image-container img {
@@ -509,18 +508,6 @@ footer .icon-color {
   position: relative;
 }
 
-.image-container:hover::after {
-  opacity: 1;
-  bottom: 0px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transform: translateY(0%);
-  overflow: hidden;
-}
-.icon-ul {
-  fill: #f4f4fd;
-}
 .per {
   position: absolute;
   top: 0;
