@@ -474,6 +474,9 @@ footer .container {
 footer .icon-color {
   padding: 0;
 }
+#caren {
+  color: #404bbf;
+}
 #caren::after {
   content: "";
   width: 100%;
