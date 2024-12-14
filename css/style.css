@@ -724,12 +724,13 @@ footer .mediaqq {
   fill: #2a2a2a;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-close-x:hover {
+.btn-close:hover .btn-close-x {
   fill: #ffffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-close-x:focus {
+.btn-close:hover .btn-close-x {
   fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .p-modal {
@@ -866,6 +867,7 @@ input:focus + .icon-form {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  fill: transparent;
 }
 
 .icon-form-ok {
