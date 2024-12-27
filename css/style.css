@@ -118,6 +118,7 @@ header .container {
   }
   .address .ulheader {
     font-family: Roboto;
+    font-style: normal;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.04em;
@@ -219,8 +220,9 @@ header .container {
   height: 100%;
   background-color: #fff;
   opacity: 0;
+  z-index: 999;
   padding: 72px 16px;
-  visibility: hidden;
+  /* visibility: hidden; */
   pointer-events: none;
   transition:
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -249,6 +251,7 @@ header .container {
 }
 .mobile-address .mobile-tabq {
   font-family: Roboto;
+  font-style: normal;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -344,25 +347,68 @@ header .container {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/fon/Dark-bg-mobile@1x.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: 50%, 50%;
   background-size: cover;
-  height: 600px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 188px 0;
+  padding: 72px 0;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .sectionone {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office1-2.png);
+      url(../images/fon/Dark-bg-mobile@2x.jpg);
+    
+  }
+}
+@media only screen and (min-width: 768px) {
+  .sectionone {
+    padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/fon/Dark-bg-plsh@1x.jpg);
+        
+  }
+}
+
+@media screen and (min-width: 768px)  and (min-resolution: 192dpi){
+  .sectionone {
+    padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/fon/Dark-bg-plsh@2x.jpg);
+     
+  }
+}
+@media screen and (min-width: 1158px) {
+  .sectionone {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/fon/people-office-desktop@1x.jpg);
+  }
+}
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .sectionone {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/fon/people-office-desktop@1x.jpg);
   }
 }
 h1 {
@@ -429,8 +475,8 @@ h1 {
   }
 }
 /* ================================================ section two ===================================================================*/
-.sectiontwo {
-  padding: 96px 16;
+.sectiontwo{
+  padding: 96px 0;
 }
 .visually-hidden {
   text-align: center;
@@ -447,11 +493,14 @@ h1 {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.lilili{
+  margin-bottom: 72px;
+}
+.lilili:last-child{
+  margin-bottom: 0;
+}
 .icon-back {
   display: none;
-}
-.ulmain {
-  padding: 96px 0;
 }
 .hhhqq {
   font-size: 36px;
@@ -460,13 +509,13 @@ h1 {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  margin-top: 72px;
+  justify-content: center;
   line-height: 40px;
 }
 .pppp {
   font-size: 16px;
   color: #434455;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   line-height: 24px;
   letter-spacing: 0.02em;
@@ -531,9 +580,18 @@ h1 {
 .fotoul {
   display: flex;
   flex-wrap: wrap;
-  gap: 72px;
   justify-content: center;
+  row-gap:  72px;
 }
+@media screen and (min-width: 768px) {
+
+.sectionthree  .fotoul {
+    gap: 24px;
+    row-gap: 64px;
+    
+  }
+}
+
 .fotoli {
   box-shadow:
     0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -614,6 +672,7 @@ h1 {
   }
   .fotoul {
     gap: 24px;
+
   }
 }
 @media screen and (min-width: 1158px) {
@@ -631,7 +690,7 @@ h1 {
   flex-wrap: wrap;
 }
 .lifour {
-  max-width: 288px;
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .lifour:hover {
@@ -721,6 +780,7 @@ h1 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 96px 0;
+   
 }
 .logofi {
   font-family: "Raleway", sans-serif;
@@ -746,6 +806,8 @@ h1 {
 }
 .footer-media .icon-ul {
   gap: 16px;
+  display: flex;
+  justify-content: center;
 }
 .mediaqq {
   font-family: Roboto;
@@ -757,21 +819,13 @@ h1 {
   margin-top: 0;
   margin-bottom: 16px;
   line-height: 1.5;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
+  display: flex; 
+  flex-direction: column; 
   align-items: center;
 }
-footer .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-}
-
 footer .icon-color {
   padding: 0;
 }
-
 .sms-footer:focus {
   background-color: #31d0aa;
 }
@@ -784,7 +838,7 @@ footer .icon-color {
 }
 .footer-media {
   margin-bottom: 72px;
-  padding: 40px;
+
 }
 .paralel .logofi::after {
   width: 100%;
@@ -817,6 +871,11 @@ footer .icon-color {
     margin-right: 24px;
     max-width: 264px;
   }
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
   .logofi {
     justify-content: flex-start;
   }
@@ -828,12 +887,14 @@ footer .icon-color {
   }
   footer .container {
     padding-left: 108px;
+  
+  }
+  .footer-media{
+    width: 208px;
   }
 }
 @media screen and (min-width: 1158px) {
-  .foot {
-    padding: 100px 0;
-  }
+
   .paralel {
     max-width: 264px;
     margin-right: 120px;
@@ -843,6 +904,11 @@ footer .icon-color {
   }
   footer .container {
     padding-left: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .mediaqq{
+    align-items: flex-start;
   }
 }
 /* ================================================ footer email ===================================================================*/
@@ -909,9 +975,6 @@ input {
   flex-wrap: wrap;
   flex-direction: column;
 }
-.div-messege {
-  padding: 16px 0;
-}
 .btn-footer-div {
   display: flex;
   gap: 24px;
@@ -922,9 +985,7 @@ input {
   margin-left: 16px;
   fill: #ffffff;
 }
-footer .mediaqq {
-  margin-bottom: 16px;
-}
+
 @media screen and (min-width: 768px) {
   .footer-email-div {
     flex-direction: row;
@@ -934,13 +995,10 @@ footer .mediaqq {
   .email-footer {
     width: 264px;
   }
-  .btn-footer {
-    margin-bottom: -34px;
-  }
   .btn-footer-div {
     flex-direction: row; 
     justify-content: center;
-    align-items: center;
+    
   }
 }
 /* ================================================ modal ===================================================================*/
