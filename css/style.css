@@ -880,7 +880,7 @@ footer .icon-color {
     justify-content: flex-start;
   }
   .mediaqq {
-    justify-content: flex-start;
+    align-items: flex-start;
   }
   .foot .footer-media {
     padding: 0;
