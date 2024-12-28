@@ -422,7 +422,7 @@ h1 {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  max-width: 496px;
+  max-width: 216px;
   line-height: 40px;
 }
 
@@ -430,6 +430,7 @@ h1 {
   .hhhh {
     font-size: 56px;
     line-height: 60px;
+    max-width: 496px;
   }
 }
 
@@ -509,7 +510,7 @@ h1 {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  justify-content: center;
+  text-align: center;
   line-height: 40px;
 }
 .pppp {
@@ -525,7 +526,7 @@ h1 {
 }
 @media screen and (min-width: 768px) {
   .lilili {
-    width: 356px;
+    flex-basis: calc((100% - 32px) / 2);
   }
 
   .ulmain {
@@ -536,8 +537,14 @@ h1 {
 }
 @media screen and (min-width: 1158px) {
   .lilili {
-    width: 264px;
+    flex-basis: calc((100% - 72px) / 4);
+    margin: 0;
   }
+  .hhhqq{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    }
   .ulmain {
     gap: 24px;
     display: flex;
@@ -593,6 +600,7 @@ h1 {
 }
 
 .fotoli {
+  background-color: #ffffff;
   box-shadow:
     0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -672,7 +680,6 @@ h1 {
   }
   .fotoul {
     gap: 24px;
-
   }
 }
 @media screen and (min-width: 1158px) {
@@ -688,6 +695,7 @@ h1 {
 .ulgogo {
   display: flex;
   flex-wrap: wrap;
+  gap: 48px;
 }
 .lifour {
 
@@ -756,6 +764,9 @@ h1 {
   .lifour {
     width: calc((100% - 48px) / 2);
     max-width: 360px;
+  }
+  .hhhqq{
+    text-align: left;
   }
 }
 
@@ -894,7 +905,9 @@ footer .icon-color {
   }
 }
 @media screen and (min-width: 1158px) {
-
+.foot{
+  padding-bottom: 0;
+}
   .paralel {
     max-width: 264px;
     margin-right: 120px;
